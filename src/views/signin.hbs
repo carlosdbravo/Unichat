@@ -1,0 +1,47 @@
+<body class="body-signin clearfix ">
+
+  <div class=" d-flex justify-content-center mt-5">
+    <div class=" col-xl-3 d-flex flex-column">
+      <div class="d-flex flex-column">
+        {{>errors}}
+      </div>
+      <div class="flex-xl-row d-flex align-items-end">
+        <img src="/images/garra.png" alt="" style="width: 50px; height:;">
+        <h1 class=" text-center" style="margin-left: 1rem;">Unichat</h1>
+      </div>
+
+
+      <div class="col-xl-12 d-flex flex-column  rounded-3 shadow bg-body">
+        <div class="flex-xl-row d-flex justify-content-md-around m-2">
+          <a class="col-sm-5 btn btn-success " onclick="mcSignin()">Sign in</a>
+          <a class="col-sm-5 btn btn-primary " onclick="mcCreate()">Create Acount</a>
+        </div>
+        <div class="">
+          <div class="collapse.show" id="collapseSignin">
+            {{>forms/signinform}}
+          </div>
+          <div class="collapse" id="collapseCreate">
+            {{>forms/createform}}
+          </div>
+        </div>
+      </div>
+
+
+      <footer class=" mt-5 text-center">
+        <p>Universidad Enrrique Díaz de Leon
+          <a class="text-dark " href="">UNEDL</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>

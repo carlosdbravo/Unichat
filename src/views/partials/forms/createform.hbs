@@ -1,0 +1,26 @@
+<div class=" card card-body  p-4  text-dark ">
+  <h1>Create Acount</h1>
+  <form action="/create/user" method="POST">
+    <!--  Creamos la ruta del formulario-->
+    <div>
+      <input type="text" name="name" placeholder="name" id="createname" class="form-control  text-dark" />
+
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="email" id="createemail" class="form-control  mt-2 text-dark" />
+    </div>
+    <div>
+      <input type="password" name="password" placeholder="password" id="createpassword"
+        class="form-control   mt-2 text-dark">
+    </div>
+    <div>
+      <input type="password" name="confirmpassword" placeholder="confirm your password" id="confirmpassword"
+        class="form-control   mt-2 text-dark">
+    </div>
+    <div>
+      <input type="text" name="matricula" placeholder="matricula" id="creatematricula"
+        class="form-control   mt-2 text-dark">
+    </div>
+    <button class="btn btn-primary mt-3" type="submit">Create</button>
+  </form>
+</div>
